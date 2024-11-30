@@ -1,0 +1,27 @@
+/* static/css/signup.css */
+body {
+    background-color: #f4f7fc;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
