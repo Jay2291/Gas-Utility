@@ -1,0 +1,16 @@
+{% load static %}
+<h1>Your Service Requests</h1>
+
+<ul>
+    {% for request in service_requests %}
+        <li>
+            <strong>{{ request.service_type }}</strong> - Status: {{ request.status }} 
+            <br>Requested on: {{ request.date_submitted }}
+            <br>Resolved on: {{ request.date_resolved }}
+        </li>
+    {% empty %}
+        <p>You have no service requests.</p>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'home' %}">Back to Home</a>

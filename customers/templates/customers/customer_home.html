@@ -1,0 +1,13 @@
+{% load static %}
+<h1>Welcome, {{ user.username }}!</h1>
+<p>Select an option from the menu below:</p>
+
+<ul>
+    <li><a href="{% url 'edit_profile' %}">Edit Profile</a></li>
+    <li><a href="{% url 'add_service_request' %}">Add Service Request</a></li>
+    <li><a href="{% url 'track_requests' %}">Track Service Requests</a></li>
+</ul>
+<form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
